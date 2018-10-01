@@ -35,9 +35,10 @@ google_analytics: UA-36382378-1
 
 # Plugin configuration : Scholar
 scholar:
-  bibliography_list_attributes:
-    reversed: "reversed" # This reverses the numbering of publications in the sorted group.
-  type_order: [article, inproceedings]
+  style: apa
+  bibtex_filters:
+    - latex
+    - markdown
   sort_by: year
   order: reverse
 
