@@ -1,5 +1,5 @@
 # ulaval-damas.github.io
-[![Build Status](https://travis-ci.org/ulaval-damas/ulaval-damas.github.io.svg?branch=master)](https://travis-ci.org/ulaval-damas/ulaval-damas.github.io)
+[![Build Status](https://travis-ci.org/ulaval-damas/website.svg?branch=master)](https://travis-ci.org/ulaval-damas/website)
 
 
 ### Work locally
