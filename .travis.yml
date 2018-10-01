@@ -13,7 +13,8 @@ before_script:
 - chmod +x ./script/cibuild
 script: "./script/cibuild"
 deploy:
+  repo: ulaval-damas/ulaval-damas.github.io
   skip-cleanup: true
   local-dir: "./_site/"
   provider: pages
-  target-branch: gh-pages
+  target-branch: master
