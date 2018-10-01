@@ -4,11 +4,11 @@ layout: default
 
 <div class="home">
 
-    {{ content }}
-
     {% if site.posts != empty %}
         <h2>Articles</h2>
     {% endif %}
+
+    {{ content }}
 
     <ul class="post-list">
         {% for post in site.posts %}

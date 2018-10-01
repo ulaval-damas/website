@@ -1,9 +1,19 @@
 ---
 layout: home
-title: Accueil
+title: DAMAS
+navs:
+- id: '#people'
+  name: People
+
+- id: '#references'
+  name: References
 ---
 
 <meta name="keywords" content="Université Laval, DAMAS, ulaval"/>
+
+WEBSITE UNDER CONSTRUCTION
+
+The DAMAS lab focuses its research on TODO
 
 
 # People
