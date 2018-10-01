@@ -1,0 +1,17 @@
+language: ruby
+cache: bundler
+branches:
+  only:
+  - master
+before_install:
+- openssl aes-256-cbc -K $encrypted_d7bc0aa1d25a_key -iv $encrypted_d7bc0aa1d25a_iv
+  -in github_deploy_key.enc -out github_deploy_key -d
+before_script:
+- chmod +x ./script/cibuild
+script: "./script/cibuild"
+deploy:
+  skip-cleanup: true
+  local-dir: "./_site/"
+  provider: pages
+  github-token: ./github_deploy_key.enc
+  target-branch: gh-pages
