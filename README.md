@@ -2,6 +2,16 @@
 [![Build Status](https://travis-ci.org/ulaval-damas/website.svg?branch=master)](https://travis-ci.org/ulaval-damas/website)
 
 
+### Change website content
+To add content, modify the file [index.md](https://github.com/ulaval-damas/website/blob/master/index.md)
+
+#### People
+To change the list of people, modify the file [people.yml](https://github.com/ulaval-damas/website/blob/master/_data/people.yml)
+
+#### References
+To add or remove references, simply edit [references.bib](https://github.com/ulaval-damas/website/blob/master/_bibliography/references.bib)
+
+
 ### Work locally
 
 To develop locally this website, you need to install dependencies first:
