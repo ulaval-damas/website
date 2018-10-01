@@ -3,18 +3,16 @@ cache: bundler
 branches:
   only:
   - master
-before_install:
-  - openssl aes-256-cbc -K $encrypted_d7bc0aa1d25a_key -iv $encrypted_d7bc0aa1d25a_iv
-    -in github_deploy_key.enc -out github_deploy_key -d
-  - chmod 600 github_deploy_key
-  - eval $(ssh-agent -s)
-  - ssh-add github_deploy_key
 before_script:
 - chmod +x ./script/cibuild
 script: "./script/cibuild"
 deploy:
   repo: ulaval-damas/ulaval-damas.github.io
+  github_token: $GITHUB_TOKEN
   skip-cleanup: true
   local-dir: "./_site/"
   provider: pages
   target-branch: master
+env:
+  global:
+    secure: dKHE6lZRUPpKwnjxZOgGjY91bHSaMb1ENyCi7ja9VnM3HGM2x0UUSq82RmxgLwrxlMNKE0VitJyC+176B3tbeL1U4ea9ODopdjP6T346eiE/zL1IG90K3sPNXaO3L689sg5YeAT7TrAg97Im69vkG2vTlE2omS9morZQDIHg0NI1Dg0yPD2Qstl8Kb1jWHs7vKc7eBpqzZa6OvaH2oKs/IZd5X2LPqPbnYfSSWjHfpRzU+ALzCGqvZL42Ra1grQxRXbykrPOZUR8AwMw0EsIA8du2sI/peZMYQ1Gde+eldCUoDiiipP+C1RkPRHhjhJ070t+pqkWlLc6DproE1AtCG8aBaPryMFlJWGkedbvi3kuN+6DfgMiL2ckB7qxc0LX1lXgXsNOOFzwKxvZnG5ViyjQce4eGQ+gO6IaqnE4Py9trk0dmY7I8BBJqAoqtJ2WJMv9CxMZzpBTuvY7WHZlOIfWKmNAQiTq98tDOPHZDIr6BzLtXou7jg0QrzX7pu2iaTpiql0hS+d8mVGqAZMBOQzfIc8it5yT96hUi0BURfmBAUnkL4LhzlOK6Vn+YwJFcwDiLTJ0o0QOPT4fk+9Zsq7I6PwbctPNHgE1hMR2+G+m5+0flVP2Ug73OpCLOxQBmkTZUM+fQ6N+2ALqDrGecFRP/2QMZdcGQE+Mz+xXuvQ=
