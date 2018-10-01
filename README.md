@@ -1,11 +1,10 @@
-# glo4030.github.io
+# ulaval-damas.github.io
+[![Build Status](https://travis-ci.org/ulaval-damas/ulaval-damas.github.io.svg?branch=master)](https://travis-ci.org/ulaval-damas/ulaval-damas.github.io)
 
-Site web du cours GLO-4030/GLO-7030
 
-### Développer localement
+### Work locally
 
-Pour travailler sur le site web du cours sans avoir à le déployer, il faut d'abord installer les dépendances:
-
+To develop locally this website, you need to install dependencies first:
 
 ``` bash
 sudo apt install ruby-full
@@ -15,10 +14,8 @@ source ~/.bashrc
 gem install jekyll bundler github-pages
 ```
 
-Une fois les dépendances installée, il suffit d'aller dans le repository du site web et lancer:
+Then, to have a local web server, run:
 
 ```bash
 bundle exec jekyll serve --watch
 ```
-
-Cette commande relance le build du site web dès qu'il y a une modification.
