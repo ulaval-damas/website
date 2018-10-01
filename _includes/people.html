@@ -1,0 +1,20 @@
+<div class="about-people">
+    {% for person in include.people %}
+    <div class="about-person">
+        <div class="about-person-img">
+            <img src="{{ site.baseurl }}/{{ person.photo }}"/>
+        </div>
+        <div class="about-person-name">{{ person.name }}</div>
+        <div>{{ person.title }}</div>
+        {% if person.office %}
+        <div>Office {{ person.office }}</div>
+        {% endif %}
+        {% if person.email %}
+        <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+        {% endif %}
+        {% if person.github %}
+        {% include icon-github.html username=person.github %}
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>

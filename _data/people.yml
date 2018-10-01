@@ -1,24 +1,40 @@
-- pgiguere:
-  title: Professeur
-  name: Philippe Giguère
-  email: philippe.giguere@ift.ulaval.ca
-  photo: assets/img/pgiguere.png
-  office: PLT-3976
+professors:
+  - bchaib:
+    title: Professor
+    name: Brahim Chaib-draa
+    email: chaib@ift.ulaval.ca
+    photo: assets/img/bchaib.jpg
+    office: PLT-3986
 
-- agariepy:
-  title: Assistant
-  name: Alexandre Gariépy
-  github: gariepyalex
-  photo: assets/img/AGariepy.png
+  - pgiguere:
+    title: Professor
+    name: Philippe Giguère
+    email: philippe.giguere@ift.ulaval.ca
+    photo: assets/img/pgiguere.png
+    office: PLT-3976
 
-- mcarpentier:
-  title: Assistant
-  name: Mathieu Carpentier
-  github: Matiel
-  photo: assets/img/MCarpentier.jpg
+students:
+  - ltrottier:
+    title: PhD student
+    name: Ludovic Trottier
+    github: ltrottier
+    photo: assets/img/LudoTrottier.jpg
 
-- ltrottier:
-  title: Assistant
-  name: Ludovic Trottier
-  github: ltrottier
-  photo: assets/img/LudoTrottier.jpg
+  - agariepy:
+    title: Master's student
+    name: Alexandre Gariépy
+    github: gariepyalex
+    photo: assets/img/AGariepy.png
+
+  - mcarpentier:
+    title: Master's student
+    name: Mathieu Carpentier
+    github: Matiel
+    photo: assets/img/MCarpentier.jpg
+
+
+alumni:
+  - mhou:
+    title: PhD
+    name: Ming Hou
+    photo: assets/img/placeholder.png
