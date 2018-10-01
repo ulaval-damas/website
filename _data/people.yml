@@ -1,40 +1,34 @@
 professors:
-  - bchaib:
-    title: Professor
+  - title: Professor
     name: Brahim Chaib-draa
     email: chaib@ift.ulaval.ca
     photo: assets/img/bchaib.jpg
     office: PLT-3986
 
-  - pgiguere:
-    title: Professor
+  - title: Professor
     name: Philippe Giguère
     email: philippe.giguere@ift.ulaval.ca
     photo: assets/img/pgiguere.png
     office: PLT-3976
 
 students:
-  - ltrottier:
-    title: PhD student
+  - title: PhD student
     name: Ludovic Trottier
     github: ltrottier
     photo: assets/img/LudoTrottier.jpg
 
-  - agariepy:
-    title: Master's student
+  - title: Master's student
     name: Alexandre Gariépy
     github: gariepyalex
     photo: assets/img/AGariepy.png
 
-  - mcarpentier:
-    title: Master's student
+  - title: Master's student
     name: Mathieu Carpentier
     github: Matiel
     photo: assets/img/MCarpentier.jpg
 
 
 alumni:
-  - mhou:
-    title: PhD
+  - title: PhD
     name: Ming Hou
     photo: assets/img/placeholder.png
