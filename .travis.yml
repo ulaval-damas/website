@@ -13,5 +13,5 @@ deploy:
   skip-cleanup: true
   local-dir: "./_site/"
   provider: pages
-  github-token: ./github_deploy_key.enc
+  github-token: ./github_deploy_key
   target-branch: gh-pages
