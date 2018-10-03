@@ -1,6 +1,7 @@
 #! /bin/bash
 set -e
 
+echo $FSG_PASSWORD | sudo openconnect -u $FSG_USERNAME --passwd-on-stdin vpn.ulaval.ca
 mkdir fsg
 sudo mount -t cifs -o domain=ulaval,username=$FSG_USERNAME,password=$FSG_PASSWORD //damas.ift.ulaval.ca/damas fsg/
 rm -r fsg/*
