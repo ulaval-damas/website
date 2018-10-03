@@ -9,6 +9,7 @@ branches:
 before_script:
 - chmod +x ./script/cibuild
 - chmod +x ./script/deployfsg
+- sudo apt-get install -y cifs-utils
 script: "./script/cibuild"
 deploy:
   repo: ulaval-damas/ulaval-damas.github.io
