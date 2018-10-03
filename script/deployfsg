@@ -2,4 +2,4 @@
 set -e
 
 cd ./_site
-smbclient //damas.ift.ulaval.ca/damas $FSG_PASSWORD -U ulaval/$FSG_USERNAME -c 'mask "";prompt OFF;recurse ON;mput *'
+smbclient //132.203.210.132/damas $FSG_PASSWORD -U ulaval/$FSG_USERNAME -c 'mask "";prompt OFF;recurse ON;mput *'
