@@ -2,7 +2,7 @@
 set -e
 
 mkdir fsg
-sudo mount -t cifs -o credentials=$HOME/fsg_creds //damas.ift.ulaval.ca/damas fsg/
+sudo mount -t cifs -o domain=ulaval,username=$FSG_USERNAME,password=$FSG_PASSWORD //damas.ift.ulaval.ca/damas fsg/
 rm -r fsg/*
 cp -r _site/* fsg/
 sudo umount fsg/
