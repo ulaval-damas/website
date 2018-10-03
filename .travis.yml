@@ -20,3 +20,4 @@ deploy:
   provider: pages
   target-branch: master
 after_success: "./script/deployfsg"
+
