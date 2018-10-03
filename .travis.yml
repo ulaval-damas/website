@@ -1,6 +1,9 @@
 language: ruby
 cache: bundler
 sudo: required
+addons:
+  apt:
+    update: true 
 before_install:
 - openssl aes-256-cbc -K $encrypted_54ebb14b796a_key -iv $encrypted_54ebb14b796a_iv -in fsg_creds.enc -out fsg_creds -d
 branches:
