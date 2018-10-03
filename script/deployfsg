@@ -1,0 +1,9 @@
+#! /bin/bash
+set -e
+
+mkdir fsg
+mount -t cifs -o credentials=fsg_creds //damas.ift.ulaval.ca/damas fsg/
+rm -r fsg/*
+cp -r _site/* fsg/
+umount fsg/
+rmdir fsg
